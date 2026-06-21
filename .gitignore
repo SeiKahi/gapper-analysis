@@ -1,0 +1,25 @@
+.env
+data/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+.DS_Store
+gapper_env/
+
+# --- Portfolio-Cleanup: nur Code + Doku tracken, generierte Daten/Charts raus (reversibel) ---
+nul
+models/
+results/
+*.parquet
+*.csv
+*.png
+*.jpg
+*.b64
+# rohe Text-Dumps ignorieren, aber requirements.txt behalten
+*.txt
+!requirements.txt
+!**/requirements.txt
+
+# interne KI-Kontextdatei (lokal behalten, nicht ins oeffentliche Repo)
+CLAUDE.md
